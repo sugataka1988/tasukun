@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  shipping_method: MyString
+  delivery_company_name: MyString
+  delivery_carrier_phone_number: 1
+  delivery_company_address: MyString
+
+two:
+  shipping_method: MyString
+  delivery_company_name: MyString
+  delivery_carrier_phone_number: 1
+  delivery_company_address: MyString
