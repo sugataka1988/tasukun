@@ -1,0 +1,76 @@
+\dt
+select schemaname, tablename, tableowner from pg_tables;
+select * from users;
+.tables
+\d
+\d\dt
+\dt
+\d users
+\d users
+\d users
+\d user
+select * from users
+;
+select * from users;
+\q
+\d users
+\q
+\d users
+\d
+select * schema_migrations
+;
+select * from  schema_migrations;
+select * from  schema_migrations;
+\d colors
+\d users
+select * from colors;
+select * from  schema_migrations;
+\d
+q
+\q
+\d users
+\q
+\d
+q
+\q
+\d
+\q
+\d
+\q
+\d
+\q
+\d
+\q
+\d
+\d hoges
+\d users
+\hoges
+\d hoges
+\d
+\q
+\d
+\q
+\d
+\d tasks
+\q
+\d
+\d tasks
+\d users
+\q
+\d
+\d users
+\q
+\d
+\d
+\q
+\d users
+\q
+\q
+\d
+\d users
+\q
+\d users
+\q
+\d deliverie
+\d deliverie
+\s deliveries
