@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  root to: redirect('/tasks')
+  get 'home/top'
+  get 'tasks/index'
+  get 'users/index'
+  get 'deliveries/index'
   resources :deliveries
   resources :tasks
   resources :users
