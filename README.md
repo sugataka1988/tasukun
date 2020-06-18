@@ -28,9 +28,7 @@ Task model
 | ---------| ---------- |
 | User ID  | integer  |
 | Reception date  | datetime  |
-| Task content  | text  |
-| Number of requests | integer  |
-| Desired completion date  | datetime  |
+| Task title  | text  |
 
 User model
 | column | Data type |
@@ -48,3 +46,9 @@ Deliveries model
 | Delivery company name  | string  |
 | Delivery carrier phone number  | integer  |
 | Delivery company address  | string  |
+
+Task content model
+| column | Data type |
+| ---------| ---------- |
+| Task content  | text  |
+| Desired completion date  | datetime  |
