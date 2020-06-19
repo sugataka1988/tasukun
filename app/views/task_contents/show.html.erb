@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Task content:</strong>
+  <%= @task_content.task_content %>
+</p>
+
+<p>
+  <strong>Desired completion date:</strong>
+  <%= @task_content.desired_completion_date %>
+</p>
+
+<%= link_to 'Edit', edit_task_content_path(@task_content) %> |
+<%= link_to 'Back', task_contents_path %>
