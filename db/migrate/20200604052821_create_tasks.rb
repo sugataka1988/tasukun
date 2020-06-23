@@ -1,7 +1,7 @@
 class CreateTasks < ActiveRecord::Migration[6.0]
   def change
     create_table :tasks do |t|
-      t.integer :user_id, null: false, unique: true
+      t.string :user_id, null: false, unique: true
       t.datetime :reception_date,null: false
       t.text :task_title, null: false
 

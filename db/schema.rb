@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2020_06_19_054320) do
   create_table "deliveries", force: :cascade do |t|
     t.string "shipping_method", null: false
     t.string "delivery_company_name", null: false
-    t.integer "delivery_carrier_phone_number", null: false
+    t.string "delivery_carrier_phone_number", null: false
     t.string "delivery_company_address", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 2020_06_19_054320) do
   end
 
   create_table "tasks", force: :cascade do |t|
-    t.integer "user_id", null: false
+    t.string "user_id", null: false
     t.datetime "reception_date", null: false
     t.text "task_title", null: false
     t.datetime "created_at", precision: 6, null: false
