@@ -1,9 +1,13 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   root to: redirect('/tasks')
   get 'home/top'
   get 'tasks/index'
   get 'users/index'
   get 'deliveries/index'
+=======
+  resources :task_contents
+>>>>>>> origin
   resources :deliveries
   resources :tasks
   resources :users
