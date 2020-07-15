@@ -2,8 +2,10 @@ Rails.application.routes.draw do
   get "labels" => "labels#index"
   get "labels/new" => "labels#new"
   get "labels/:id" => "labels#show"
+  get "labels/:id/edit" => "labels#edit"
   
   post "labels/create" => "labels#create"
+  post "labels/:id/update" => "labels#update"
   
   root to: redirect('/tasks')
   resources :deliveries

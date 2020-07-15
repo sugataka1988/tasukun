@@ -1,0 +1,6 @@
+<h1>Edit</h1>
+<%= form_tag("/labels/#{@label.id}/update") do %>
+<textarea name = "name"><%= @label.name %></textarea>
+<p><input type="submit" value="Save"></p>
+<% end %>
+<p><%= link_to("Back", "/labels") %></p>
