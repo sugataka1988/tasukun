@@ -1,0 +1,24 @@
+<h1>Labels</h1>
+<br>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @label.each do |label| %>
+      <tr>
+        <td><%= label.name %></td>
+        <td><%= link_to('show',"/labels/#{label.id}")%></td>
+
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<%= link_to("New name", "/labels/new") %>
