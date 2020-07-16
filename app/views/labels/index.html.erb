@@ -15,6 +15,7 @@
         <td><%= label.name %></td>
         <td><%= link_to('Show',"/labels/#{label.id}")%></td>
         <td><%= link_to('Edit',"/labels/#{label.id}/edit")%></td>
+        <td><%= link_to('Delete',"/labels/#{label.id}/destroy",{method: "post"})%></td>
 
       </tr>
     <% end %>

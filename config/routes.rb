@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   
   post "labels/create" => "labels#create"
   post "labels/:id/update" => "labels#update"
+  post "labels/:id/destroy" => "labels#destroy"
   
   root to: redirect('/tasks')
   resources :deliveries
