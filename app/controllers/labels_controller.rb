@@ -1,10 +1,11 @@
 class LabelsController < ApplicationController
+  before_action :set_label, only: [:show, :edit, :update, :destroy]
+  
   def index
     @label = Label.all
   end
 
   def show
-    @label = Label.find_by(id: params[:id])
   end  
   
   def new
@@ -12,7 +13,7 @@ class LabelsController < ApplicationController
   end
   
   def create
-    @label = Label.new(name: params[:name])
+    @label = Label.new(label_params)
     if @label.save
       flash[:notice] = "Succeeded !"
       redirect_to("/labels")
@@ -22,13 +23,12 @@ class LabelsController < ApplicationController
   end
   
   def edit
-    @label = Label.find_by(id: params[:id])
   end
   
   def update
-    @label = Label.find_by(id: params[:id])
-    @label.name = params[:name]
-    if @label.save
+    #@label.name = params[:name]
+    #if @label.save
+    if @label.update(label_params)
       flash[:notice] = "Succeeded !"
       redirect_to("/labels")
     else
@@ -37,9 +37,20 @@ class LabelsController < ApplicationController
   end
 
   def destroy
-    @label = Label.find_by(id: params[:id])
     @label.destroy
     flash[:notice] = "Succeeded !"
     redirect_to("/labels")
   end
+  
+  private
+    # Use callbacks to share common setup or constraints between actions.
+    def set_label
+      @label = Label.find_by(id: params[:id])
+    end
+    
+      # Only allow a list of trusted parameters through.
+    def label_params
+      params.require(:label).permit(:name)
+    end
+  
 end

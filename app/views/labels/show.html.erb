@@ -1,5 +1,6 @@
   <strong>Label name:</strong>
   <%= @label.name  %>
-  <p><%= link_to("Edit", "/labels/#{@label.id}/edit") %></p>
-  <p><%= link_to("Delete", "/labels/#{@label.id}/destroy",{method: "post"}) %></p>
-  <p><%= link_to("Back", "/labels") %></p>
+  
+  <p><%= link_to("Edit", edit_label_path(@label)) %></p>
+  <p><%= link_to("Delete", @label, method: "delete", data: { confirm: "Are you sure?"}) %></p>
+  <p><%= link_to("Back", labels_path) %></p>

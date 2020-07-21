@@ -1,14 +1,16 @@
 Rails.application.routes.draw do
-  get "labels" => "labels#index"
-  get "labels/new" => "labels#new"
-  get "labels/:id" => "labels#show"
-  get "labels/:id/edit" => "labels#edit"
+#  get "labels" => "labels#index"
+#  get "labels/new" => "labels#new"
+#  get "labels/:id" => "labels#show"
+#  get "labels/:id/edit" => "labels#edit"
   
-  post "labels/create" => "labels#create"
-  post "labels/:id/update" => "labels#update"
-  post "labels/:id/destroy" => "labels#destroy"
+#  post "labels/create" => "labels#create"
+#  post "labels/:id/update" => "labels#update", as: :lable_update
+#  post "labels/:id/destroy" => "labels#destroy"
   
   root to: redirect('/tasks')
+  # TODO: atode yaru
+  resources :labels
   resources :deliveries
   resources :tasks
   resources :users
