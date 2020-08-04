@@ -1,0 +1,10 @@
+<% if flash[:notice] %>
+  <p id="notice"><%= flash[:notice] %></p>
+<% end %>
+ 
+<strong>Label name:</strong>
+<%= @label.name  %>
+  
+<p><%= link_to("Edit", edit_label_path(@label)) %></p>
+<p><%= link_to("Delete", @label, method: "delete", data: { confirm: "Are you sure?"}) %></p>
+<p><%= link_to("Back", labels_path) %></p>

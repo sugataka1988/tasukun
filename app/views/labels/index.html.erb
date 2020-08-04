@@ -1,0 +1,28 @@
+<% if flash[:notice] %>
+  <p id="notice"><%= flash[:notice] %></p>
+<% end %>
+
+<h1>Labels</h1>
+<br>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @label.each do |label| %>
+      <tr>
+        <td><%= label.name %></td>
+        <td><%= link_to 'Show', label %></td>
+        <td><%= link_to 'Edit', edit_label_path(label) %></td>
+        <td><%= link_to 'Delete',label, method: "delete", data: { confirm: "Are you sure?"} %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<%= link_to("New name", new_label_path) %>

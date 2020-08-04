@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :task_contents
+  resources :labels
   resources :deliveries
   resources :tasks
   resources :users
