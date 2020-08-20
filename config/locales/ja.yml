@@ -1,0 +1,27 @@
+ja:
+  activerecord:
+    models:
+      user: ユーザー
+      task: タスク
+      task_content: タスク内容
+      delivery: 配送情報
+      label: ラベル
+    attributes:
+      user:
+        user_name: ユーザー名 
+        mail_address: メールアドレス
+        password: パスワード
+      task:
+        user_id: ユーザーID
+        reception_date: 受付日
+        task_title: タスク名
+      task_content:
+        task_content: タスク内容
+        desired_completion_date: 完了希望日
+      delivery:
+        shipping_method: 配送方法
+        delivery_company_name: 配送業者名
+        delivery_carrier_phone_number: 配送業者電話番号
+        delivery_company_address: 配送業者住所
+      label:
+        name: ラベル名
