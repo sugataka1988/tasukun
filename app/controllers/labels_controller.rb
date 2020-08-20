@@ -2,7 +2,7 @@ class LabelsController < ApplicationController
   before_action :set_label, only: [:show, :edit, :update, :destroy]
   
   def index
-    @label = Label.all
+    @label = Label.all.order(created_at: :desc)
   end
 
   def show

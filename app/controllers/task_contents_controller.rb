@@ -4,7 +4,7 @@ class TaskContentsController < ApplicationController
   # GET /task_contents
   # GET /task_contents.json
   def index
-    @task_contents = TaskContent.all
+    @task_contents = TaskContent.all.order(created_at: :desc)
   end
 
   # GET /task_contents/1
