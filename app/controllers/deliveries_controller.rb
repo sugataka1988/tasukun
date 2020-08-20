@@ -4,7 +4,7 @@ class DeliveriesController < ApplicationController
   # GET /deliveries
   # GET /deliveries.json
   def index
-    @deliveries = Delivery.all
+    @deliveries = Delivery.all.order(created_at: :desc)
   end
 
   # GET /deliveries/1
