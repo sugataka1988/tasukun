@@ -192,6 +192,7 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
+    sqlite3 (1.4.2)
     thor (1.0.1)
     thread_safe (0.3.6)
     tilt (2.0.10)
@@ -233,12 +234,13 @@ DEPENDENCIES
   pg
   puma (~> 4.3)
   rails (~> 6.0.3)
-  rspec-rails
   rails-i18n
+  rspec-rails
   sass-rails (>= 6)
   selenium-webdriver
   spring
   spring-watcher-listen (~> 2.0.0)
+  sqlite3
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 3.3.0)
